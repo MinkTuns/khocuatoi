@@ -1,0 +1,230 @@
+/*CSS Thành Phần Chung*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nền tổng thể */
+body {
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header-main {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+}
+
+/* Navigation */
+.nav-main {
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Thêm khoảng cách hai bên */
+    border-bottom: 2px solid #00ff00; /* Viền dưới xanh neon */
+}
+
+.nav-main ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-main ul li {
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.nav-main ul li a {
+    color: #00ff00; /* Chữ xanh neon */
+    text-decoration: none;
+    padding: 10px 15px; /* Thêm khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc nhẹ */
+}
+
+.nav-main ul li a:hover {
+    background-color: #00ff00; /* Nền xanh neon khi hover */
+    color: #000000; /* Chữ đen khi hover */
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Form tìm kiếm */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #00ff00; /* Viền xanh neon */
+    border-radius: 3px; /* Bo tròn các góc */
+    background-color: #000000; /* Nền đen */
+}
+
+.search-form input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 1.25em;
+    width: 250px;
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+}
+
+/* Đổi màu placeholder */
+.search-form input[type="search"]::placeholder {
+    color: #00cc66; /* Màu xanh nhạt */
+    font-style: normal; /* (Tùy chọn) Làm chữ nghiêng */
+    opacity: 0.8; /* (Tùy chọn) Độ mờ của placeholder */
+}
+
+/* Đổi màu viền khi đang nhập */
+.search-form input[type="search"]:focus {
+    outline: none; /* Loại bỏ viền mặc định */
+    border: 1px solid #00ff00; /* Viền xanh neon khi focus */
+    box-shadow: 0 0 5px #00ff00; /* Hiệu ứng ánh sáng xanh neon */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: 1px solid #00ff00; /* Viền xanh neon */
+    border-radius: 0 3px 3px 0;
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.search-form button:hover {
+    background-color: #00ff00; /* Nền xanh neon khi hover */
+    color: #000000; /* Chữ đen khi hover */
+}
+
+/* Footer */
+.footer-main {
+    height: 50px;
+    background: #000000; /* Nền đen */
+    margin-top: 10px; /* Cách bên trên 10px */
+    color: #00ff00; /* Chữ xanh neon */
+    text-align: center;
+    padding: 1em;
+    border: #00ff00 1px solid;
+}
+
+.logo-main {
+    width: 200px;
+    height: 70px;
+}
+
+.slider-main {
+    width: 100%;
+}
+
+.cate-pro {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    grid-column: 1 / -1; /* Đảm bảo cate-pro chiếm toàn bộ chiều rộng */
+}
+
+/* Header */
+.header-name {
+    font-size: 60px;
+    margin-left: 200px;
+    flex-grow: 1;
+    color: #00ff00; /* Chữ xanh neon */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+/*CSS Trang Chủ*/
+/* Nút bấm */
+.buy-button {
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+    border: 1px solid #00ff00; /* Viền xanh neon */
+    border-radius: 5px; /* Bo cạnh 2px */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: #00ff00; /* Nền xanh neon khi hover */
+    color: #000000; /* Chữ đen khi hover */
+}
+
+.content {
+    padding: 20px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+/* Sản phẩm */
+.product-items {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00ff00; /* Viền xanh neon */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    height: auto; /* Chiều cao tự động điều chỉnh theo nội dung */
+    background-color: #000000; /* Nền đen */
+    color: #00ff00; /* Chữ xanh neon */
+}
+
+.pro-img {
+    width: 80%;
+    margin: 0 auto; /* Căn giữa ảnh */
+    border: 1px #00ff00 solid;
+}
+
+.separator {
+    border-top: 1px solid #00ff00; /* Dòng kẻ ngang màu tím */
+    margin: 10px 0; /* Khoảng cách trên và dưới dòng kẻ */
+}
+
+.pro-name a {
+    color: #00ff00; /* Chữ xanh neon */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.pro-name a:hover {
+    color: #00cc66; /* Chữ xanh nhạt khi hover */
+    text-decoration: underline;
+}
+
+.time {
+    margin: 10px 0;
+    color: #00cc66;
+    font-weight: bold;
+    font-size: 1em;
+}
