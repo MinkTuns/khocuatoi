@@ -135,6 +135,47 @@ body {
 
 .slider-main {
     width: 100%;
+    height:450px;
+    border: #00ff00 1px solid;
+    border-radius: 5px;
+}
+
+/* Định dạng chung cho nút slider */
+.slider {
+    position: relative; /* Đặt vị trí tương đối để các phần tử con có thể định vị tuyệt đối */
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%; /* Đặt nút ở giữa chiều cao của slider */
+    transform: translateY(-50%); /* Căn chỉnh chính giữa theo chiều dọc */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ */
+    color: #00ff00; /* Chữ xanh neon */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 5px;
+    z-index: 10; /* Đảm bảo nút nằm trên ảnh */
+    box-sizing: border-box; /* Đảm bảo padding không làm tràn viền */
+    height: 95%;
+}
+
+/* Nút bên trái */
+.slider-button.prev {
+    left: 5px; /* Cách mép trái 10px */
+}
+
+/* Nút bên phải */
+.slider-button.next {
+right: 5px; /* Cách mép phải 10px */
+
+}
+
+/* Hiệu ứng hover */
+.slider-button:hover {
+    background-color: rgba(0, 255, 0, 0.5); /* Nền xanh neon mờ khi hover */
+    color: #000000; /* Chữ đen khi hover */
 }
 
 /* Header */
@@ -172,6 +213,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
+    margin-top: 10px;
 }
 
 /* Sản phẩm */
@@ -189,6 +231,7 @@ body {
 
 .pro-img {
     width: 80%;
+    height: 170px;
     margin: 0 auto; /* Căn giữa ảnh */
     border: 1px #00ff00 solid;
 }
