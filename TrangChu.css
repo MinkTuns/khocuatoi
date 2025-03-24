@@ -143,8 +143,6 @@ body {
     grid-column: 1 / -1; /* Đảm bảo cate-pro chiếm toàn bộ chiều rộng */
 }
 
-
-
 /* Header */
 .header-name {
     font-size: 60px;
