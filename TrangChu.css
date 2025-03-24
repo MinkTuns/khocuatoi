@@ -136,13 +136,6 @@ body {
     width: 100%;
 }
 
-.cate-pro {
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 40px;
-    grid-column: 1 / -1; /* Đảm bảo cate-pro chiếm toàn bộ chiều rộng */
-}
-
 /* Header */
 .header-name {
     font-size: 60px;
