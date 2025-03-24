@@ -272,16 +272,11 @@ footer {
     text-decoration: underline;
 }
 
-.pro-price {
+.time {
     margin: 10px 0;
     color: red;
     font-weight: bold;
     font-size: 1em;
-}
-
-.pro-price span {
-    text-decoration: line-through;
-    color: gray;
 }
 
 .news-section {
