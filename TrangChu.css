@@ -55,6 +55,7 @@ body {
     text-decoration: none;
     padding: 10px 15px; /* Thêm khoảng cách bên trong */
     border-radius: 5px; /* Bo góc nhẹ */
+    font-weight: bold;
 }
 
 .nav-main ul li a:hover {
