@@ -4,7 +4,7 @@ let index = 0; // Chỉ số ảnh hiện tại
 let autoSlideInterval = null; // Biến lưu interval cho auto slide
 
 // Tải ảnh vào mảng
-for (let i = 0; i < 0; i++) {
+for (let i = 0; i < 2; i++) {
   img[i] = new Image();
   img[i].src = `Ảnh/${i}.png`; // Đường dẫn ảnh
 }
